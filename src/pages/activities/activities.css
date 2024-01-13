@@ -1,0 +1,23 @@
+.activeMoney {
+  font-size: 100px;
+  font-weight: bolder;
+  color: #191970;
+}
+
+.analyzes {
+  padding: 20px;
+  background-color: #45b08c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 10%;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.kii {
+  text-decoration: none;
+}

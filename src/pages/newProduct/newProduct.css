@@ -1,0 +1,135 @@
+.newProduct {
+  display: flex;
+  flex: 4;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addProductForm {
+  margin-top: 10px;
+}
+
+.addProductItem {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.addProductTitle {
+  color: #32cd32;
+}
+
+.addProductItem > label {
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.addProductItem > input {
+  padding: 10px;
+}
+
+.addProductItem > select {
+  padding: 10px;
+}
+
+.addProductButton {
+  margin-top: 10px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #191970;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.inputpro {
+  width: 150%;
+}
+
+.confirmationPopup {
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: gray;
+  color: #191970;
+  display: flex;
+}
+
+.contain {
+  width: 100%;
+  height: 100vh;
+  background: #3c5077;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.but {
+  padding: 10px 60px;
+  background: #fff;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 30px;
+}
+.popup {
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0; /* To hide the popup, change the top form 50% to 0 */
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1); /* Reduce the size by adding scale to the transform */
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden; /*Lastly add visibility: hidden*/
+  transition: transform 0.4s, top 0.4s;
+}
+.open-Pop {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+.popup img {
+  width: 100px;
+  margin-top: -50%;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+}
+.popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+.popup button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+}
+
+.confirmationPopup {
+  width: 100%;
+  height: 70vh;
+  background-color: whitesmoke;
+  color: #32cd32;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textconfirmationPopup {
+  color: #198b19;
+  font-size: 30px;
+}
