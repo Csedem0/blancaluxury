@@ -2,10 +2,8 @@ import axios from "axios";
 
 const BASE_URL = "https://shopwithvikbackend.onrender.com/api/";
 
-// Function to get the token from local storage
-const getToken = () => {
-  return localStorage.getItem("token");
-};
+const TOKEN =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZmRiMDY3YWYyNTYzMTdkYzc4ZmRiMSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwNTEzMDQwNSwiZXhwIjoxNzA1NDc2MDA1fQ.j9rIOAL8TTG1W0tT7EuUXgEKPASXL7AVRIYwexF8fzw";
 
 export const publicRequest = axios.create({
   baseURL: BASE_URL,
@@ -13,18 +11,5 @@ export const publicRequest = axios.create({
 
 export const userRequest = axios.create({
   baseURL: BASE_URL,
+  headers: { token: `Bearer ${TOKEN}` },
 });
-
-// Interceptor to set the token as a header for requests
-userRequest.interceptors.request.use(
-  (config) => {
-    const token = getToken();
-    if (token) {
-      config.headers["Authorization"] = `Bearer ${token}`;
-    }
-    return config;
-  },
-  (error) => {
-    return Promise.reject(error);
-  }
-);
