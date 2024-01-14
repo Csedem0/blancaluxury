@@ -27,23 +27,9 @@ function App() {
       <div className="container">
         <Sidebar />
         <Routes>
-          <Route path="/products" element={<ProductList />} />
-          <Route path="/userlist" element={<UserList />} />
-          <Route path="/user" element={<User />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/newuser" element={<NewUser />} />
-          <Route path="/product/:productId" element={<Product />} />
+          <Route path="/" element={<ProductList />} />
+
           <Route path="/newproduct" element={<NewProduct />} />
-          <Route path="/leads" element={<AllUser />} />
-          <Route path="/analytics" element={<Analytics />} />
-          <Route path="/activities" element={<Activities />} />
-          <Route path="/sales" element={<Sales />} />
-          <Route path="/revenue" element={<Revenue />} />
-          <Route path="/analysis" element={<Analysis />} />
-          <Route path="/mail" element={<Message />} />
-          <Route path="/salesmetric" element={<SalesMetric />} />
-          <Route path="/revenuemetric" element={<RevenueMetric />} />
         </Routes>
       </div>
     </Router>

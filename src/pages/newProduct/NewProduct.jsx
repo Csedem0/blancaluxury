@@ -115,6 +115,10 @@ export default function NewProduct() {
       )}
       <form className="addProductForm">
         <div className="addProductItem">
+          <div>
+            <div className="sterics">*</div>Please fill out from scratch when
+            creating a new product
+          </div>
           <label>Image</label>
           <input
             type="file"
