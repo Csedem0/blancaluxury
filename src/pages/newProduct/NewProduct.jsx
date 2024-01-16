@@ -115,7 +115,7 @@ export default function NewProduct() {
       )}
       <form className="addProductForm">
         <div className="addProductItem">
-          <div>
+          <div className="sterics-holder">
             <div className="sterics">*</div>Please fill out from scratch when
             creating a new product
           </div>
@@ -161,7 +161,7 @@ export default function NewProduct() {
           <input
             className="inputpro"
             type="text"
-            placeholder="jeans,skirts"
+            placeholder="Home, Office or Decor"
             onChange={handleCat}
           />
         </div>

@@ -137,3 +137,8 @@
 .sterics{
   color: red;
 }
+
+.sterics-holder{
+  display: flex;
+  flex-direction: column-reverse;
+}
