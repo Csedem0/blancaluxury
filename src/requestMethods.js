@@ -3,7 +3,7 @@ import axios from "axios";
 const BASE_URL = "https://shopwithvikbackend.onrender.com/api/";
 
 const TOKEN =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZmRiMDY3YWYyNTYzMTdkYzc4ZmRiMSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwNTk3NTEyOSwiZXhwIjoxNzA2MzIwNzI5fQ.vW9CFPLF8YydMTqJNchOC5aScj8rpHJQX65IOFH-7Pw";
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZmRiMDY3YWYyNTYzMTdkYzc4ZmRiMSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwNjQzNTUzOSwiZXhwIjoxNzA2NzgxMTM5fQ.hu-RWSVQoXovNKi2zbhj1874-BtlLqBVkFmmN_NL1Ew";
 
 export const publicRequest = axios.create({
   baseURL: BASE_URL,
