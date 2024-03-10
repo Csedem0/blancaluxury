@@ -161,7 +161,7 @@ export default function NewProduct() {
           <input
             className="inputpro"
             type="text"
-            placeholder="Home, Office or Decor"
+            placeholder="Home, Office, Decor and Candles"
             onChange={handleCat}
           />
         </div>
